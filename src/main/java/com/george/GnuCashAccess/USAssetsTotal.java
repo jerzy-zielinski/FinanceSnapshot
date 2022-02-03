@@ -17,7 +17,7 @@ public class USAssetsTotal {
 	Connection connection = null;
 	try {
 	    Class.forName("org.postgresql.Driver");
-	    connection = DriverManager.getConnection("jdbc:postgresql://192.168.1.156:5432/gnucash", "postgres",
+	    connection = DriverManager.getConnection("jdbc:postgresql://192.168.1.155:5432/gnucash", "postgres",
 						     "stenia1981");
 	    PreparedStatement psmt = connection.prepareStatement("select us_total_proc()");
 	    ResultSet rs = psmt.executeQuery();
