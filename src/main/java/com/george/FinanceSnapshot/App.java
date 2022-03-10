@@ -55,7 +55,7 @@ public class App {
 	double plnTotal = usTotal * usd_pln_rate;
 	double value_of_gold = 3.7 * xau_usd_rate;
 	double value_of_silver = 252.0 * xag_usd_rate;
-	System.out.printf("Interst income since the beginning of 2021: %, 6.2f%n%n", interest_gain);
+	System.out.printf("Interst income since the beginning of 2022: %, 6.2f%n%n", interest_gain);
 	System.out.printf("XAU_USD exchange rate                 : %10.5f%n", xau_usd_rate);
 	System.out.printf("GOLD price change since the purchase  : %10.5f%% %10.5f%n", gold_price_change,
 			  value_of_gold);
