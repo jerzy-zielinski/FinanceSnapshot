@@ -17,7 +17,7 @@ public class InterestIncome {
 	Connection connection = null;
 	try {
 	    Class.forName("org.postgresql.Driver");
-	    connection = DriverManager.getConnection("jdbc:postgresql://192.168.1.159:5432/gnucash", "postgres",
+	    connection = DriverManager.getConnection("jdbc:postgresql://thinkpad:5432/gnucash", "postgres",
 						     "stenia1981");
 	    PreparedStatement psmt = connection.prepareStatement("select interest_gain('2022-01-01')");
 	    ResultSet rs = psmt.executeQuery();
